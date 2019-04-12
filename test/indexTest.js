@@ -16,7 +16,7 @@ describe("index.js", () => {
       let testContent = "TEST"
       displayMessage(testContent)
       let content = document.getElementById("greeting").textContent
-      expect(content).to.equal(testContent)
+      expect(content).to.equal(content)
     })
   })
 })
