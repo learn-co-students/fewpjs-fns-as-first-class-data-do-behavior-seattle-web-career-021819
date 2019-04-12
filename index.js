@@ -9,3 +9,20 @@ function handleClick(e) {
 
 /* Write your implementation of greet() */
 /* Write your implementation of displayMessage() */
+function greet(string){
+  let time = parseInt(string)
+  if(time < 12){
+    return "Good Morning"
+  }
+  if(time > 12 && time < 17){
+    return "Good Afternoon"
+  }
+  else {
+    return "Good Evening"
+  }
+}
+
+function displayMessage(reply){
+  let greeting = document.getElementById('greeting')
+  greeting.textContent = reply
+}
